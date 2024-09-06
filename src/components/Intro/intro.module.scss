@@ -1,0 +1,144 @@
+.container {
+  height: 100%;
+  position: relative;
+  // background-color: rgb(69, 153, 145);
+  overflow-x: clip;
+
+  .imageContainer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    overflow-x: clip;
+
+    img {
+      width: 115%;
+      margin-top: -22.5vw;
+    }
+  }
+
+  .sloganContainer {
+    top: 22.5vw;
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    img {
+      width: 27.5%;
+    }
+  }
+
+  .bubbles {
+    width: 100%;
+    height: 56vw;
+    top: 0;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .bubbleContainer {
+      position: relative;
+      img {
+        width: 100%;
+      }
+    }
+
+    &:nth-of-type(3) {
+      .bubbleContainer {
+        top: -5.5vw;
+        right: 30vw;
+        width: 20vw;
+      }
+    }
+
+    &:nth-of-type(4) {
+      .bubbleContainer {
+        top: 5.5vw;
+        left: 35vw;
+        width: 35vw;
+      }
+    }
+
+    &:nth-of-type(5) {
+      .bubbleContainer {
+        top: 25vw;
+        right: 38vw;
+        width: 33vw;
+      }
+    }
+    
+    &:nth-of-type(6) {
+      .bubbleContainer {
+        top: 49.5vw;
+        left: 5vw;
+        width: 28vw;
+      }
+    }
+
+    &:nth-of-type(7) {
+      .bubbleContainer {
+        top: 86vw;
+        right: 19vw;
+        width: 33vw;
+      }
+    }
+
+  }
+
+  
+  .phone {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    overflow-x: clip;
+
+    img {
+      width: 40%;
+    }
+  }
+
+  .slogan2Container {
+    margin-top: 56vw;
+    padding-bottom: 31vw;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-x: clip;
+
+    h1 {
+      width: 50vw;
+      text-align: center;
+      color: #ffffff;
+      font-size: 44px;
+      font-weight: 600;
+    }
+
+    .imageContainer {
+      position: relative;  
+      img {
+        width: 100%;
+      }
+      &:nth-of-type(1) {
+        top: 27vw;
+        right: 24vw;
+        width: 26vw;
+        z-index: 1;
+      }
+      &:nth-of-type(2) {
+        top: 39vw;
+        right: 41vw;
+        width: 36vw;
+      }
+      &:nth-of-type(3) {
+        top: 10vw;
+        left: 15vw;
+        width: 52vw;
+      }
+    }
+    
+
+  }
+}

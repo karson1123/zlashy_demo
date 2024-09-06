@@ -1,0 +1,277 @@
+.container {
+  height: 100%;
+  position: relative;
+  background-color: #F5F0E9;
+  overflow-x: clip;
+
+  .imageContainer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    overflow-x: clip;
+
+    img {
+      width: 115%;
+      position: absolute;
+      bottom: 0;
+    }
+  }
+
+  .intro {
+    position: relative;
+    margin-top: -16vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-x: clip;
+
+    h1 {
+      width: 65vw;
+      text-align: center;
+      font-size: 48px;
+      font-weight: 700;
+    }
+
+    img {
+      width: 8vw;
+      margin-top: -2vw;
+      margin-bottom: 2vw;
+    }
+  }
+
+  
+  .outro {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-x: clip;
+    padding-bottom: 8vw;
+
+    h1 {
+      width: 65vw;
+      text-align: center;
+      font-size: 48px;
+      font-weight: 700;
+    }
+    
+    h2 {
+      width: 65vw;
+      text-align: center;
+      font-weight: 700;
+      margin-top: -1vw;
+    }
+
+    a {
+      font-weight: 700;
+      color: rgb(78, 113, 130);
+    }
+
+    img {
+      width: 8vw;
+      margin-top: -2vw;
+      margin-bottom: 2vw;
+    }
+  }
+
+  .rightfeat {
+    position: relative;
+    margin-top: 6vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-x: clip;
+
+    // border: 1px solid blue;
+
+    .featbg {
+      position: relative;
+      width: 100vw;
+      margin-left: 6vw;
+    }
+
+    .featdec1 {
+      position: absolute;
+      top: 0;
+      right: -7vw;
+      width: 100%;
+      margin-left: 6vw;
+    }
+
+    .featdec2 {
+      position: absolute;
+      bottom: 0;
+      right: -7vw;
+      width: 100%;
+      margin-left: 6vw;
+    }
+
+    .phone {
+      position: absolute;
+      top: 0;
+      left: -7vw;
+      width: 100%;
+      margin-left: 6vw;
+    }
+
+    &:nth-of-type(5) {
+      height: 100%;
+      .desc {
+        .cat {
+          color: rgb(79, 128, 152);
+        }
+      }
+    }
+    &:nth-of-type(7) {
+      height: 100%;
+      .desc {
+        .cat {
+          color: rgb(222, 188, 124);
+        }
+      }
+    }
+
+    .desc {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      top: 10vw;
+      left: 30vw;
+      width: 33vw;
+      padding-left: 2.5vw;
+
+      .cat {
+        display: inline-block;
+        position: relative;
+        text-align: center;
+        padding: 2px 3px;
+        margin: 0;
+        width: 80px;
+        color: #72cdfb;
+        background-color: white;
+        border-radius: 50vw;
+        font-weight: 600;
+      }
+
+      h1 {
+        margin: 0;
+        width: 100%;
+        text-align: left;
+        color: #000000;
+        font-size: 44px;
+        font-weight: 800;
+      }
+
+      p {
+        text-align: left;
+        color: #000000;
+        font-size: 20px;
+        font-weight: 400;
+      }
+    }
+  }
+
+  
+  .leftfeat {
+    position: relative;
+    margin-top: 6vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-x: clip;
+
+    // border: 1px solid blue;
+
+    .featbg {
+      position: relative;
+      width: 100vw;
+      margin-right: 6vw;
+    }
+
+    .featdec1 {
+      position: absolute;
+      top: 0;
+      left: -7vw;
+      width: 100%;
+      margin-right: 6vw;
+    }
+
+    .featdec2 {
+      position: absolute;
+      bottom: 0;
+      left: -7vw;
+      width: 100%;
+      margin-right: 6vw;
+    }
+
+    .phone {
+      position: absolute;
+      top: 0;
+      right: -7vw;
+      width: 100%;
+      margin-right: 6vw;
+    }
+
+    &:nth-of-type(6) {
+      height: 100%;
+      .desc {
+        width: 30vw;
+        .cat {
+          width: 95px;
+          color: rgb(78, 113, 130);
+        }
+      }
+    }
+    &:nth-of-type(8) {
+      height: 100%;
+      .desc {
+        .cat {
+          color: rgb(206, 167, 231);
+        }
+      }
+    }
+
+    .desc {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      top: 10vw;
+      left: 13vw;
+      width: 33vw;
+      padding-left: 2.5vw;
+
+      .cat {
+        display: inline-block;
+        position: relative;
+        text-align: center;
+        padding: 2px 3px;
+        margin: 0;
+        width: 80px;
+        color: rgb(243, 162, 79);
+        background-color: white;
+        border-radius: 50vw;
+        font-weight: 600;
+      }
+
+      h1 {
+        margin: 0;
+        width: 100%;
+        text-align: left;
+        color: #000000;
+        font-size: 44px;
+        font-weight: 800;
+      }
+
+      p {
+        text-align: left;
+        color: #000000;
+        font-size: 20px;
+        font-weight: 400;
+      }
+    }
+  }
+}
