@@ -15,7 +15,7 @@
     "sass": "^1.78.0",
     "web-vitals": "^2.1.4"
   },
-  "homepage": "https://github.com/karson1123/zlashy_demo",
+  "homepage": "https://karson1123.github.io/zlashy_demo",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",

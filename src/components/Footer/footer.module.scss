@@ -41,8 +41,9 @@
       justify-content: center;
       margin-left: 40px;
       gap: 1vw;
+
       // border: medium dashed blue;
-      .contact{
+      .contact {
         display: flex;
         gap: 1.2vw;
       }
@@ -51,6 +52,7 @@
     .In {
       width: 74px;
       margin: 1vw 2vw;
+
       img {
         width: 100%;
       }
@@ -61,11 +63,53 @@
       margin: 1vw 2vw;
       gap: 20px;
     }
-  
+
     .trademark {
       margin: 1vw 2vw;
     }
   }
 
+  @media only screen and (max-width: 768px) {
+    height: 100%;
+
+    .row {
+      align-items: flex-start;
+
+      .contactContainer {
+        flex: 1;
+        margin-top: 20px;
+        padding-right: 14px;
+        gap: 0.5vw;
+
+        font-size: 12px;
+
+        // border: medium dashed blue;
+        .contact {
+          display: flex;
+          gap: 1.2vw;
+        }
+      }
+
+      .In {
+        display: none;
+      }
+
+      .footerLinks {
+        font-size: 10px;
+        // flex-direction: column;
+      }
+
+      .trademark {
+        font-size: 16px;
+      }
+
+      &:nth-of-type(2) {
+        flex-direction: column;
+        margin-left: 26px;
+      }
+    }
+
+
+  }
 
 }

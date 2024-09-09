@@ -17,15 +17,41 @@
   }
 
   .sloganContainer {
-    top: 22.5vw;
+    top: 39.5vh;
     position: absolute;
     width: 100%;
     display: flex;
     justify-content: center;
+    z-index: 2;
 
     img {
       width: 27.5%;
     }
+  }
+
+
+  @media only screen and (max-width: 768px) {
+    .imageContainer {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      overflow-x: clip;
+
+      img {
+        width: 125%;
+        margin-top: 11vh;
+      }
+    }
+
+    .sloganContainer {
+      top: 75.5vw;
+      width: 100%;
+
+      img {
+        width: 55vw;
+      }
+    }
+
   }
 
   .bubbles {
@@ -39,6 +65,7 @@
 
     .bubbleContainer {
       position: relative;
+
       img {
         width: 100%;
       }
@@ -67,7 +94,7 @@
         width: 33vw;
       }
     }
-    
+
     &:nth-of-type(6) {
       .bubbleContainer {
         top: 49.5vw;
@@ -84,9 +111,51 @@
       }
     }
 
+    @media only screen and (max-width: 768px) {
+      &:nth-of-type(3) {
+        .bubbleContainer {
+          top: 15.5vw;
+          right: -30vw;
+          width: 36vw;
+        }
+      }
+
+      &:nth-of-type(4) {
+        .bubbleContainer {
+          top: 95.5vw;
+          left: 33vw;
+          width: 45vw;
+        }
+      }
+
+      &:nth-of-type(5) {
+        .bubbleContainer {
+          top: 23vw;
+          right: 29vw;
+          width: 42vw;
+        }
+      }
+
+      &:nth-of-type(6) {
+        .bubbleContainer {
+          top: 102.5vw;
+          left: -32vw;
+          width: 44vw;
+        }
+      }
+
+      &:nth-of-type(7) {
+        .bubbleContainer {
+          top: 146vw;
+          right: -9vw;
+          width: 44vw;
+        }
+      }
+    }
+
   }
 
-  
+
   .phone {
     position: relative;
     display: flex;
@@ -95,6 +164,12 @@
 
     img {
       width: 40%;
+    }
+
+    @media only screen and (max-width: 768px) {
+      img {
+        width: 80%;
+      }
     }
   }
 
@@ -114,31 +189,65 @@
       color: #ffffff;
       font-size: 44px;
       font-weight: 600;
+
+      @media only screen and (max-width: 768px) {
+        width: 70vw;
+        font-size: 24px;
+      }
     }
 
     .imageContainer {
-      position: relative;  
+      position: relative;
+
       img {
         width: 100%;
       }
+
       &:nth-of-type(1) {
         top: 27vw;
         right: 24vw;
         width: 26vw;
         z-index: 1;
       }
+
       &:nth-of-type(2) {
         top: 39vw;
         right: 41vw;
         width: 36vw;
       }
+
       &:nth-of-type(3) {
         top: 10vw;
         left: 15vw;
         width: 52vw;
       }
+
+
+      @media only screen and (max-width: 768px) {
+        margin-top: -10vh;
+        &:nth-of-type(1) {
+          top: 10vh;
+          right: 24vw;
+          width: 26vw;
+          z-index: 1;
+        }
+
+        &:nth-of-type(2) {
+          top: 0;
+          right: 41vw;
+          width: 36vw;
+        }
+
+        &:nth-of-type(3) {
+          top: -30vh;
+          left: 12vw;
+          width: 62vw;
+        }
+      }
     }
-    
+
 
   }
+
+
 }

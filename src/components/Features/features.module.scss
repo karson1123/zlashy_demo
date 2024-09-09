@@ -1,5 +1,6 @@
 .container {
   height: 100%;
+  margin-top: 6vw;
   position: relative;
   background-color: #F5F0E9;
   overflow-x: clip;
@@ -17,9 +18,18 @@
     }
   }
 
+  @media only screen and (max-width: 768px) {
+    margin-top: -20vh;
+
+    .intro {
+      margin-top: -8vw;
+    }
+  }
+
   .intro {
     position: relative;
-    margin-top: -16vw;
+    margin-top: -10vw;
+    // margin-top: -2vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -27,9 +37,9 @@
     overflow-x: clip;
 
     h1 {
-      width: 65vw;
+      // width: 75vw;
       text-align: center;
-      font-size: 48px;
+      font-size: 4vw;
       font-weight: 700;
     }
 
@@ -40,7 +50,7 @@
     }
   }
 
-  
+
   .outro {
     position: relative;
     display: flex;
@@ -56,7 +66,7 @@
       font-size: 48px;
       font-weight: 700;
     }
-    
+
     h2 {
       width: 65vw;
       text-align: center;
@@ -73,6 +83,21 @@
       width: 8vw;
       margin-top: -2vw;
       margin-bottom: 2vw;
+    }
+  }
+
+  @media only screen and (max-width: 900px) {
+    .outro {
+      h1 {
+        width: 85vw;
+        font-size: 42px;
+        font-weight: 700;
+      }
+
+      h2 {
+        width: 75vw;
+        font-weight: 700;
+      }
     }
   }
 
@@ -119,14 +144,17 @@
 
     &:nth-of-type(5) {
       height: 100%;
+
       .desc {
         .cat {
           color: rgb(79, 128, 152);
         }
       }
     }
+
     &:nth-of-type(7) {
       height: 100%;
+
       .desc {
         .cat {
           color: rgb(222, 188, 124);
@@ -140,7 +168,7 @@
       flex-direction: column;
       top: 10vw;
       left: 30vw;
-      width: 33vw;
+      width: 40vw;
       padding-left: 2.5vw;
 
       .cat {
@@ -174,7 +202,47 @@
     }
   }
 
-  
+  @media only screen and (max-width: 900px) {
+    .rightfeat {
+      .featbg {
+        position: relative;
+        width: 170vw;
+        margin-left: 56vw;
+      }
+
+      .featdec1 {
+        top: auto;
+        bottom: 0;
+      }
+
+      .phone {
+        position: absolute;
+        top: 2vh;
+        left: -10vw;
+        width: 155%;
+        margin-left: 0;
+      }
+
+      .desc {
+        top: 15vw;
+        left: 37vw;
+        width: 60vw;
+
+        h1 {
+          font-size: 30px;
+          font-weight: 800;
+          margin-top: 0.5vh;
+          margin-bottom: -1.5vh;
+        }
+
+        p {
+          font-size: 18px;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+
   .leftfeat {
     position: relative;
     margin-top: 6vw;
@@ -218,16 +286,20 @@
 
     &:nth-of-type(6) {
       height: 100%;
+
       .desc {
         width: 30vw;
+
         .cat {
           width: 95px;
           color: rgb(78, 113, 130);
         }
       }
     }
+
     &:nth-of-type(8) {
       height: 100%;
+
       .desc {
         .cat {
           color: rgb(206, 167, 231);
@@ -241,7 +313,7 @@
       flex-direction: column;
       top: 10vw;
       left: 13vw;
-      width: 33vw;
+      width: 40vw;
       padding-left: 2.5vw;
 
       .cat {
@@ -271,6 +343,86 @@
         color: #000000;
         font-size: 20px;
         font-weight: 400;
+      }
+    }
+  }
+
+
+  @media only screen and (max-width: 900px) {
+    .leftfeat {
+      .featbg {
+        position: relative;
+        width: 170vw;
+        margin-right: 56vw;
+      }
+
+      .featdec1 {
+        top: auto;
+        bottom: 0;
+      }
+
+      .phone {
+        position: absolute;
+        top: 2vh;
+        right: -10vw;
+        width: 155%;
+        margin-right: 0;
+      }
+
+      .desc {
+        top: 15vw;
+        left: 3vw;
+        width: 60vw;
+
+        h1 {
+          font-size: 30px;
+          font-weight: 800;
+          margin-top: 0.5vh;
+          margin-bottom: -1.5vh;
+        }
+
+        p {
+          font-size: 18px;
+          font-weight: 400;
+        }
+      }
+
+
+      &:nth-of-type(6) {
+        .desc {
+          width: 60vw;
+        }
+      }
+    }
+  }
+
+
+  @media only screen and (max-width: 472px) {
+    .rightfeat {
+      .desc {
+        h1 {
+          font-size: 24px;
+          font-weight: 800;
+        }
+
+        p {
+          font-size: 16px;
+          font-weight: 400;
+        }
+      }
+    }
+
+    .leftfeat {
+      .desc {
+        h1 {
+          font-size: 24px;
+          font-weight: 800;
+        }
+
+        p {
+          font-size: 16px;
+          font-weight: 400;
+        }
       }
     }
   }

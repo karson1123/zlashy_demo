@@ -6,6 +6,10 @@ $dat-green: rgb(69, 153, 145);
     width: 456px;
     height: 45px;
 
+    @media only screen and (max-width: 500px) {
+        width: 273.6px;
+    }
+
     input {
         opacity: 0;
         width: 0;
@@ -22,12 +26,22 @@ $dat-green: rgb(69, 153, 145);
 
         &:nth-of-type(2) {
             color: $dat-green;
-            left: 270px;
+            left: 324px;
+        }
+        
+        @media only screen and (max-width: 500px) {
+            top: -6px;
+            left: 30px;
+            font-size: 15.5px;
+            font-weight: 600;
+            &:nth-of-type(2) {
+                left: 150px;
+            }
         }
     }
 
-    
-    input:checked ~ h3 {
+
+    input:checked~h3 {
         color: $dat-green;
 
         &:nth-of-type(2) {
@@ -52,6 +66,11 @@ $dat-green: rgb(69, 153, 145);
         content: "";
         height: 45px;
         width: 228px;
+
+        @media only screen and (max-width: 500px) {
+            width: 136.8px;
+        }
+
         background-color: $dat-green;
         border-radius: 50px;
         transition: .4s;
@@ -59,5 +78,9 @@ $dat-green: rgb(69, 153, 145);
 
     input:checked+&::before {
         transform: translateX(228px);
+
+        @media only screen and (max-width: 500px) {
+            transform: translateX(136.8px);
+        }
     }
 }

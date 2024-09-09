@@ -48,9 +48,9 @@ const Features = () => {
             <div className={features.intro}>
                 <h1>Unlock the power of balance</h1>
                 <img src={ColouredDots} alt="ColouredDots" />
-                <label class={switchs.switch}>
+                <label className={switchs.switch}>
                     <input type="checkbox" />
-                    <span class={switchs.slider}></span>
+                    <span className={switchs.slider}></span>
                     <h3>To Prosper</h3>
                     <h3>To Learn & Earn</h3>
                 </label>
