@@ -73,6 +73,7 @@
     height: 100%;
 
     .row {
+      margin-top: 20px;
       align-items: flex-start;
       
     .logoContainer {
@@ -87,7 +88,6 @@
 
       .contactContainer {
         flex: 1;
-        margin-top: 20px;
         padding-right: 14px;
         gap: 0.5vw;
 

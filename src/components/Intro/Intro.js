@@ -138,7 +138,7 @@ const Intro = () => {
       } else {
         tl.to([section1.current],
           {
-            y: 700,
+            y: 650,
             opacity: 0,
             scale: 0,
             scrollTrigger: {
