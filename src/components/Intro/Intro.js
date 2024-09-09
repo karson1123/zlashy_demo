@@ -53,52 +53,62 @@ const Intro = () => {
       if (window.innerWidth > 768) {
         tl.to(bub1Ref.current,
           {
-            y: 500,
+            y: 700,
             x: 100,
+            scale: 0.7,
             opacity: 0,
             scrollTrigger: {
               trigger: bub1Ref.current,
               start: "top top",
+              end: "150% top",
               scrub: 1,
             },
           }).to(bub2Ref.current,
             {
-              y: 500,
+              y: 700,
               x: -280,
+              scale: 0.7,
               opacity: 0,
               scrollTrigger: {
                 trigger: bub2Ref.current,
                 start: "20% top",
+                end: "150% top",
                 scrub: 1,
               },
             }).to(bub3Ref.current,
               {
-                y: 500,
+                y: 700,
                 x: 320,
+                scale: 0.7,
                 opacity: 0,
                 scrollTrigger: {
                   trigger: bub3Ref.current,
                   start: "10% top",
+                  end: "150% top",
                   scrub: 1,
                 },
               }).to(bub4Ref.current,
                 {
-                  y: 400,
+                  y: 600,
                   x: -10,
+                  scale: 0.7,
                   opacity: 0,
                   scrollTrigger: {
                     trigger: bub4Ref.current,
                     start: "top top",
+                    end: "150% top",
                     scrub: 1,
                   },
                 }).to(bub5Ref.current,
                   {
-                    y: 300,
+                    y: 500,
                     x: 120,
+                    scale: 0.7,
                     opacity: 0,
                     scrollTrigger: {
                       trigger: bub5Ref.current,
                       start: "top top",
+                      end: "150% top",
                       scrub: 1,
                     },
                   }).to(bgRef.current,
@@ -128,13 +138,13 @@ const Intro = () => {
       } else {
         tl.to([section1.current],
           {
-            y: 750,
+            y: 700,
             opacity: 0,
             scale: 0,
             scrollTrigger: {
               trigger: section1.current,
               start: "65% top",
-              end: "85% top",
+              end: "82% top",
               scrub: 1,
               pin: true,
             },
@@ -164,62 +174,68 @@ const Intro = () => {
       })
 
       if (window.innerWidth > 768) {
-      tl2.fromTo(slogan2ref.current,
-        {
-          opacity: 0,
-        },
-        {
-          opacity: 1,
-          scrollTrigger: {
-            trigger: slogan2ref.current,
-            start: "20% 90%",
-            end: "top 50%",
-            scrub: 1,
-          },
-        }, 0).fromTo(phone1ref.current,
+        tl2.fromTo(slogan2ref.current,
           {
             opacity: 0,
           },
           {
             opacity: 1,
             scrollTrigger: {
-              trigger: phone1ref.current,
-              start: "top 90%",
-              end: "20% 90%",
+              trigger: slogan2ref.current,
+              start: "20% 90%",
+              end: "top 50%",
               scrub: 1,
             },
-          }, 0).fromTo(graphref.current,
+          }, 0).fromTo(phone1ref.current,
             {
               opacity: 0,
             },
             {
               opacity: 1,
               scrollTrigger: {
-                trigger: graphref.current,
+                trigger: phone1ref.current,
                 start: "top 90%",
-                end: "40% 90%",
+                end: "20% 90%",
                 scrub: 1,
               },
-            }, 0)
-          } else {tl2.fromTo([slogan2ref.current, phone1ref.current, grassref.current, graphref.current],
-            {
-              opacity: 0,
+            }, 0).fromTo(graphref.current,
+              {
+                opacity: 0,
+              },
+              {
+                opacity: 1,
+                scrollTrigger: {
+                  trigger: graphref.current,
+                  start: "top 90%",
+                  end: "40% 90%",
+                  scrub: 1,
+                },
+              }, 0)
+      } else {
+        tl2.fromTo([slogan2ref.current, phone1ref.current, grassref.current, graphref.current],
+          {
+            opacity: 0,
+          },
+          {
+            opacity: 1,
+            scrollTrigger: {
+              trigger: slogan2ref.current,
+              start: "20% 90%",
+              end: "top 50%",
+              scrub: 1,
             },
-            {
-              opacity: 1,
-              scrollTrigger: {
-                trigger: slogan2ref.current,
-                start: "20% 90%",
-                end: "top 50%",
-                scrub: 1,
-              },
-            }, 0)
-          }
+          }, 0)
+      }
 
 
     })
     return () => context.revert();
   }, [])
+
+
+  const handleClick = () => {
+    window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ', '_blank');
+  };
 
   return (
     <div ref={container} className={intro.container}>
@@ -227,69 +243,85 @@ const Intro = () => {
         <div className={intro.imageContainer}>
           <img ref={bgRef} src={BackgroundDesktop} alt="Background Desktop" />
         </div>
+        {/* <div className={intro.sloganContainer}>
+          <img src={Livingyour8alance} alt="Living your 8alance" />
+        </div> */}
+
         <div className={intro.sloganContainer}>
           <img src={Livingyour8alance} alt="Living your 8alance" />
+          <div
+            onClick={handleClick}
+            style={{
+              position: 'absolute',
+              bottom: 0,
+              left: '35%',
+              width: '30%',
+              height: '20%',
+              cursor: 'pointer',
+              backgroundColor: 'rgba(0, 0, 0, 0)', // 透明背景
+            }}
+          />
         </div>
 
         <motion.div
           className={intro.bubbles}>
-          <motion.div className={intro.bubbleContainer}>
+          <motion.div
+            initial={{ rotate: -3 }}
+            animate={{ rotate: 6 }}
+            transition={{ repeat: Infinity, duration: 1, repeatType: "reverse", ease: 'backInOut' }}
+            className={intro.bubbleContainer}>
             <motion.img
-              ref={bub1Ref}
-              initial={{ rotate: -3 }}
-              animate={{ rotate: 6 }}
-              transition={{ repeat: Infinity, duration: 1, repeatType: "reverse", ease: 'backInOut' }}
-              src={Bubble1} alt={`bubbles`} />
+              ref={bub1Ref} src={Bubble1} alt={`bubbles`} />
           </motion.div>
         </motion.div>
 
         <motion.div
           className={intro.bubbles}>
-          <div className={intro.bubbleContainer}>
+          <motion.div
+            initial={{ rotate: 3 }}
+            animate={{ rotate: -6 }}
+            transition={{ repeat: Infinity, duration: 1.5, repeatType: "reverse", ease: 'backInOut' }}
+            className={intro.bubbleContainer}>
             <motion.img
-              ref={bub2Ref}
-              initial={{ rotate: 3 }}
-              animate={{ rotate: -6 }}
-              transition={{ repeat: Infinity, duration: 1.5, repeatType: "reverse", ease: 'backInOut' }}
-              src={Bubble2} alt={`bubbles`} />
-          </div>
+              ref={bub2Ref} src={Bubble2} alt={`bubbles`} />
+          </motion.div>
         </motion.div>
 
         <motion.div
           className={intro.bubbles}>
-          <div className={intro.bubbleContainer}>
+          <motion.div
+            initial={{ rotate: -3 }}
+            animate={{ rotate: 6 }}
+            transition={{ repeat: Infinity, duration: 2, repeatType: "reverse", ease: 'backInOut' }}
+            className={intro.bubbleContainer}>
             <motion.img
-              ref={bub3Ref}
-              initial={{ rotate: -3 }}
-              animate={{ rotate: 6 }}
-              transition={{ repeat: Infinity, duration: 2, repeatType: "reverse", ease: 'backInOut' }}
-              src={Bubble3} alt={`bubbles`} />
-          </div>
+              ref={bub3Ref} src={Bubble3} alt={`bubbles`} />
+          </motion.div>
         </motion.div>
 
         <motion.div
           className={intro.bubbles}>
-          <div className={intro.bubbleContainer}>
+          <motion.div
+            initial={{ rotate: 3 }}
+            animate={{ rotate: -6 }}
+            transition={{ repeat: Infinity, duration: 1.3, repeatType: "reverse", ease: 'backInOut' }}
+            className={intro.bubbleContainer}>
             <motion.img
-              ref={bub4Ref}
-              initial={{ rotate: 3 }}
-              animate={{ rotate: -6 }}
-              transition={{ repeat: Infinity, duration: 1.3, repeatType: "reverse", ease: 'backInOut' }}
-              src={Bubble4} alt={`bubbles`} />
-          </div>
+              ref={bub4Ref} src={Bubble4} alt={`bubbles`} />
+          </motion.div>
         </motion.div>
 
 
         <motion.div
           className={intro.bubbles}>
-          <div className={intro.bubbleContainer}>
+          <motion.div
+            initial={{ rotate: -3 }}
+            animate={{ rotate: 6 }}
+            transition={{ repeat: Infinity, duration: 2.2, repeatType: "reverse", ease: 'backInOut' }}
+            className={intro.bubbleContainer}>
             <motion.img
-              ref={bub5Ref}
-              initial={{ rotate: -3 }}
-              animate={{ rotate: 6 }}
-              transition={{ repeat: Infinity, duration: 2.2, repeatType: "reverse", ease: 'backInOut' }}
-              src={Bubble5} alt={`bubbles`} />
-          </div>
+              ref={bub5Ref} src={Bubble5} alt={`bubbles`} />
+          </motion.div>
         </motion.div>
       </div>
 

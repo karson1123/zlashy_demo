@@ -74,6 +74,16 @@
 
     .row {
       align-items: flex-start;
+      
+    .logoContainer {
+      .logo {
+        height: 5vh;
+      }
+
+      .logoText {
+        font-size: 1.25vh;
+      }
+    }
 
       .contactContainer {
         flex: 1;

@@ -26,16 +26,16 @@ $dat-green: rgb(69, 153, 145);
 
         &:nth-of-type(2) {
             color: $dat-green;
-            left: 324px;
+            left: 270px;
         }
         
         @media only screen and (max-width: 500px) {
-            top: -6px;
-            left: 30px;
+            top: -4.5px;
+            left: 27px;
             font-size: 15.5px;
             font-weight: 600;
             &:nth-of-type(2) {
-                left: 150px;
+                left: 146px;
             }
         }
     }
