@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/zlashy_demo/static/css/main.dc79f51d.css",
-    "main.js": "/zlashy_demo/static/js/main.7f10c1f7.js",
+    "main.css": "/zlashy_demo/static/css/main.108a9c3d.css",
+    "main.js": "/zlashy_demo/static/js/main.70f70dda.js",
     "static/media/Background_Desktop.png": "/zlashy_demo/static/media/Background_Desktop.e4f12cd0423dcbbed483.png",
     "static/media/Button4_3.png": "/zlashy_demo/static/media/Button4_3.99479bc782a42fa2675e.png",
     "static/media/Mobile1_EN.png": "/zlashy_demo/static/media/Mobile1_EN.392739320c3a92e728fb.png",
@@ -42,11 +42,11 @@
     "static/media/Map_Pin.svg": "/zlashy_demo/static/media/Map_Pin.c9df070601ad1b367490d1e894fc6b36.svg",
     "static/media/Beige_CurveBG.svg": "/zlashy_demo/static/media/Beige_CurveBG.8e33865d00dd383f6f19a316ec2f81f3.svg",
     "static/media/Menu_Alt_01.svg": "/zlashy_demo/static/media/Menu_Alt_01.757f51cbb2e053d31eec30e9d7610879.svg",
-    "main.dc79f51d.css.map": "/zlashy_demo/static/css/main.dc79f51d.css.map",
-    "main.7f10c1f7.js.map": "/zlashy_demo/static/js/main.7f10c1f7.js.map"
+    "main.108a9c3d.css.map": "/zlashy_demo/static/css/main.108a9c3d.css.map",
+    "main.70f70dda.js.map": "/zlashy_demo/static/js/main.70f70dda.js.map"
   },
   "entrypoints": [
-    "static/css/main.dc79f51d.css",
-    "static/js/main.7f10c1f7.js"
+    "static/css/main.108a9c3d.css",
+    "static/js/main.70f70dda.js"
   ]
 }
