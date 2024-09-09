@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/zlashy_demo/static/css/main.3257561f.css",
-    "main.js": "/zlashy_demo/static/js/main.de65fe50.js",
+    "main.js": "/zlashy_demo/static/js/main.7e43d3c2.js",
     "static/media/Background_Desktop.png": "/zlashy_demo/static/media/Background_Desktop.e4f12cd0423dcbbed483.png",
     "static/media/Button4_3.png": "/zlashy_demo/static/media/Button4_3.99479bc782a42fa2675e.png",
     "static/media/Mobile1_EN.png": "/zlashy_demo/static/media/Mobile1_EN.392739320c3a92e728fb.png",
@@ -43,10 +43,10 @@
     "static/media/Beige_CurveBG.svg": "/zlashy_demo/static/media/Beige_CurveBG.8e33865d00dd383f6f19a316ec2f81f3.svg",
     "static/media/Menu_Alt_01.svg": "/zlashy_demo/static/media/Menu_Alt_01.757f51cbb2e053d31eec30e9d7610879.svg",
     "main.3257561f.css.map": "/zlashy_demo/static/css/main.3257561f.css.map",
-    "main.de65fe50.js.map": "/zlashy_demo/static/js/main.de65fe50.js.map"
+    "main.7e43d3c2.js.map": "/zlashy_demo/static/js/main.7e43d3c2.js.map"
   },
   "entrypoints": [
     "static/css/main.3257561f.css",
-    "static/js/main.de65fe50.js"
+    "static/js/main.7e43d3c2.js"
   ]
 }
