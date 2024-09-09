@@ -243,9 +243,6 @@ const Intro = () => {
         <div className={intro.imageContainer}>
           <img ref={bgRef} src={BackgroundDesktop} alt="Background Desktop" />
         </div>
-        {/* <div className={intro.sloganContainer}>
-          <img src={Livingyour8alance} alt="Living your 8alance" />
-        </div> */}
 
         <div className={intro.sloganContainer}>
           <img src={Livingyour8alance} alt="Living your 8alance" />
@@ -258,7 +255,7 @@ const Intro = () => {
               width: '30%',
               height: '20%',
               cursor: 'pointer',
-              backgroundColor: 'rgba(0, 0, 0, 0)', // 透明背景
+              backgroundColor: 'rgba(0, 0, 0, 0)',
             }}
           />
         </div>
@@ -351,9 +348,4 @@ const Intro = () => {
   );
 };
 
-
-{/* <motion.div
-        className="background"
-        style={{ scale, opacity }}
-      /> */}
 export default Intro;

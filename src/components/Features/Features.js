@@ -98,7 +98,7 @@ const Features = () => {
                     initial={{ opacity: 0, x: -30 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: true, amount: 0.5 }}
-                     src={feat2bg} alt="featbg" className={features.featbg} />
+                    src={feat2bg} alt="featbg" className={features.featbg} />
                 <motion.img
                     initial={{ opacity: 0, y: -100 }}
                     whileInView={{ opacity: 1, y: 0 }}
@@ -136,7 +136,7 @@ const Features = () => {
                     initial={{ opacity: 0, x: 30 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: true, amount: 0.5 }}
-                     src={feat3bg} alt="featbg" className={features.featbg} />
+                    src={feat3bg} alt="featbg" className={features.featbg} />
                 <motion.img
                     initial={{ opacity: 0, y: -100 }}
                     whileInView={{ opacity: 1, y: 0 }}
@@ -173,7 +173,7 @@ const Features = () => {
                     initial={{ opacity: 0, x: -30 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: true, amount: 0.5 }}
-                     src={feat4bg} alt="featbg" className={features.featbg} />
+                    src={feat4bg} alt="featbg" className={features.featbg} />
                 <motion.img
                     initial={{ opacity: 0, y: -100 }}
                     whileInView={{ opacity: 1, y: 0 }}
@@ -210,7 +210,7 @@ const Features = () => {
                     initial={{ opacity: 0, x: 30 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: true, amount: 0.5 }}
-                     src={feat5bg} alt="featbg" className={features.featbg} />
+                    src={feat5bg} alt="featbg" className={features.featbg} />
                 <motion.img
                     initial={{ opacity: 0, y: -100 }}
                     whileInView={{ opacity: 1, y: 0 }}
@@ -247,7 +247,7 @@ const Features = () => {
                     initial={{ opacity: 0, x: -30 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: true, amount: 0.5 }}
-                     src={feat6bg} alt="featbg" className={features.featbg} />
+                    src={feat6bg} alt="featbg" className={features.featbg} />
                 <motion.img
                     initial={{ opacity: 0, y: -100 }}
                     whileInView={{ opacity: 1, y: 0 }}
